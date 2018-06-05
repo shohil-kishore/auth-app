@@ -29,14 +29,20 @@ const users = require("./routes/users");
 // Port number
 const port = 3000;
 
-// Middleware that allows API requests from a different domain name
+// CORS Middleware that allows API requests from a different domain name
 app.use(cors());
 
 // Static folder
 app.use(express.static(path.join(__dirname, "public")));
 
-// Middleware that parses incoming request bodies
+// Body-Parser Middleware that parses incoming request bodies
 app.use(bodyParser.json());
+
+// Passport Middlewware for tokens
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport')(passport);
 
 // User users for all user routes
 app.use("/users", users);
