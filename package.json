@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/shohil-kishore/auth-app/issues"
   },
-  "homepage": "https://github.com/shohil-kishore/auth-app#readme"
+  "homepage": "https://github.com/shohil-kishore/auth-app#readme",
+  "devDependencies": {
+    "ws": "3.3.2"
+  }
 }
