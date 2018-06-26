@@ -49,7 +49,7 @@ app.use("/users", users);
 
 // Index route
 app.get("/", (req, res) => {
-  res.send("Invalid endpoint");
+  res.send("Invalid endpoint for now");
 });
 
 // Start server
