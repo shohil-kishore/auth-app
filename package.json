@@ -28,6 +28,6 @@
   },
   "homepage": "https://github.com/shohil-kishore/auth-app#readme",
   "devDependencies": {
-    "ws": "3.3.2"
+    "ws": "7.3.0"
   }
 }
